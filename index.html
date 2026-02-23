@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
+</head>
+<body class="dark-mode">
+    <!-- Noise overlay for texture -->
+    <div class="noise"></div>
+    
+    <!-- Magnetic orbs background -->
+    <div class="glow-wrapper">
+        <div class="glow-orb orb-primary"></div>
+        <div class="glow-orb orb-secondary"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <div class="nav-blur">
+            <span class="brand">ANKITA<span class="dot">•</span>SHARMA</span>
+            <div class="nav-links">
+                <button id="theme-switch" class="vibe-toggle" aria-label="Toggle theme">
+                    <span class="toggle-track">
+                        <span class="toggle-indicator"></span>
+                    </span>
+                    <span class="mode-label">Switch Vibe</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Bento Grid -->
+    <main class="bento-wrapper">
+        <!-- Hero Card - Large -->
+        <div class="bento-card hero">
+            <div class="profile-area">
+                <img src="Assets/profile.png" alt="Ankita Sharma" class="pfp" onerror="this.src='https://via.placeholder.com/100x100?text=AS'">
+                <div class="status-container">
+                    <span class="status-pulse"></span>
+                    <span class="status-text">Available for Internships</span>
+                </div>
+            </div>
+            <h1 class="hero-title">ANKITA <span class="accent-text-gradient">SHARMA</span></h1>
+            <p class="hero-desc">Founder @ Vasuki AI • Building interpretable AI systems & bridging research with application.</p>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/sharmaankita3387/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sharmaankita3387" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="sharma.ankita3387@gmail.com" class="social-link" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Experience Card - GDG McMaster -->
+        <div class="bento-card experience" id="work">
+            <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span class="kicker">Recent Research</span>
+            <h3 class="card-title">GDG McMaster</h3>
+            <p class="card-desc">Interpretability research using TransformerLens. Analyzing attention patterns in GPT-3 for mechanistic interpretability.</p>
+            <div class="card-footer">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">TransformerLens</span>
+            </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="bento-card skills">
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="kicker">Toolkit & Stack</span>
+            <h3 class="card-title">Technical Arsenal</h3>
+            <div class="skill-cloud">
+                <span class="skill-item">C</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">PyTorch</span>
+                <span class="skill-item">HTML/CSS</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">TensorFlow</span>
+                <span class="skill-item">UI/UX</span>
+                <span class="skill-item">Figma</span>
+            </div>
+        </div>
+
+        <!-- Sanskrit Card - Human Element -->
+        <div class="bento-card sanskrit">
+            <div class="card-icon"><i class="fa-solid fa-om"></i></div>
+            <span class="kicker">Cultural Roots</span>
+            <h3 class="card-title">संस्कृतम् (Sanskrit)</h3>
+            <p class="sanskrit-phrase">"विद्या ददाति विनयं"</p>
+            <p class="sanskrit-meaning">Knowledge humbles the mind</p>
+            <div class="sanskrit-tags">
+                <span class="tag">Phonetics</span>
+                <span class="tag">Vedic Math</span>
+            </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="bento-card education">
+            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="kicker">Education</span>
+            <h3 class="card-title">McMaster University</h3>
+            <p class="card-subtitle">B.Eng in AI & Software Engineering</p>
+            <p class="card-years">2024 - 2029</p>
+            <div class="edu-highlights">
+                <span class="highlight">GDSC</span>
+                <span class="highlight">EduTech</span>
+            </div>
+        </div>
+
+        <!-- Projects Card -->
+        <div class="bento-card projects">
+            <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <span class="kicker">Featured Work</span>
+            <h3 class="card-title">Recent Projects</h3>
+            <ul class="project-list">
+                <li><i class="fa-regular fa-circle-check"></i> TransformerLens Interpretability</li>
+                <li><i class="fa-regular fa-circle-check"></i> EduTech Database Setup</li>
+                <li><i class="fa-regular fa-circle-check"></i> Sanskrit NLP Model</li>
+            </ul>
+        </div>
+
+        <!-- Philosophy Card -->
+        <div class="bento-card philosophy">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p class="quote">"Bridging mathematical rigidity with fluid creativity — building AI that doesn't just compute, but understands."</p>
+            <p class="quote-author">— Ankita Sharma</p>
+            <div class="vibe-badge">Vibe Coding ⚡</div>
+        </div>
+
+
+        <!-- CTA Card -->
+        <a href="mailto:sharma.ankita3387@gmail.com" class="bento-card connect-btn">
+            <div class="cta-content">
+                <span class="cta-text">Connect with me</span>
+                <i class="fa-solid fa-arrow-right-long arrow-icon"></i>
+            </div>
+            <span class="cta-availability">Open to research collaborations</span>
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
